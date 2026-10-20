@@ -20,6 +20,36 @@
         ],
         "createdAt": "2026-10-20T19:42:33.560Z",
         "reason": "Claude: false positive; detector counts only fixed px UI sizes, headings are clamp() 30-84px (H1 84px, h2 48px vs 16px body)"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "18px",
+        "createdAt": "2026-10-20T19:53:03.480Z",
+        "reason": "Claude: nested price-card radius (24px frame minus 6px padding), intentional, DESIGN.md notes it as nested"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "6px",
+        "createdAt": "2026-10-20T19:53:03.542Z",
+        "reason": "Claude: focus-ring corner radius on :focus-visible, not a surface shape"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "17px",
+        "createdAt": "2026-10-20T19:53:03.605Z",
+        "reason": "Claude: clamp() minimum of the hero promise (17-20px), within documented body-large range"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "25px",
+        "createdAt": "2026-10-20T19:53:03.666Z",
+        "reason": "Claude: desktop-only header wordmark step, single use"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "22px",
+        "createdAt": "2026-10-20T19:53:03.727Z",
+        "reason": "Claude: desktop-only step titles and price 'first time' figure, title tier 20-24px"
       }
     ]
   }
