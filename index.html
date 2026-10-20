@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pristine Dryer Vents LLC · Dryer vent cleaning in Ocean County, NJ</title>
+<meta name="description" content="Dryer vent cleaning in Manchester, Whiting, Lakehurst and across Ocean County, NJ, from Daniel &amp; Brandi. $139 per dryer, $129 your first time. Call or text 732-799-1379.">
+<meta name="theme-color" content="#f4f6fb">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Pristine Dryer Vents LLC · Clean dryer, no fire.">
+<meta property="og:description" content="Dryer vent cleaning across Ocean County, NJ, from Daniel &amp; Brandi. $139 per dryer, $129 your first time. Call or text 732-799-1379.">
+<meta property="og:url" content="https://10elizabethbell.github.io/pristineDryerVents/">
+<meta property="og:image" content="https://10elizabethbell.github.io/pristineDryerVents/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap">
+<style>
+/* ---------- Tokens ---------- */
+:root{
+  /* off-white paper, two Pristine navies, one vent blue from the logo */
+  --paper:#f4f6fb;       /* page ground */
+  --card:#ffffff;
+  --field:#e6ecf5;       /* inputs and chips on the white form card */
+  --ink:#06182f;         /* headings, text on blue */
+  --body:#24364b;        /* running text on light */
+  --soft:#4a5a6c;        /* secondary text on light */
+  --navy:#0d3768;        /* hero, prices, close */
+  --deep:#06182f;        /* how it works, footer (line texture) */
+  --on-dark:#f4f7fb;
+  --on-dark-soft:#c6d5ea;
+  --blue:#15a0f5;        /* the logo's vent blue: fills only; text on it is --ink */
+  --blue-2:#4db8f8;
+  --blue-ink:#0a5fa8;    /* blue as text on light */
+  --line:rgba(6,24,47,.12);
+  --focus:#0d3768;       /* form hover/focus outline, distinct from the blue fill */
+  --error:#b3261e;
+  --texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px);
+  --display:"Cal Sans","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --text:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+  --r-card:24px;--r-field:10px;--pill:999px;
+  --gutter:20px;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;background:var(--paper)}
+body{margin:0;font:16px/1.7 var(--text);color:var(--body);background:var(--paper)}
+::selection{background:var(--blue);color:var(--ink)}
+img,svg{display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}
+.on-navy :focus-visible,.on-deep :focus-visible,.hero :focus-visible,footer :focus-visible{outline-color:var(--blue)}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 var(--gutter)}
+h1,h2,h3{margin:0;font-family:var(--display);font-weight:400;line-height:1.08;letter-spacing:-.005em;color:var(--ink);text-wrap:balance}
+h2{font-size:clamp(30px,7.6vw,48px)}
+p{margin:0}
+
+/* ---------- Bands ---------- */
+section{padding:64px 0}
+.on-paper{background:var(--paper)}
+.on-navy{background:var(--navy);color:var(--on-dark-soft)}
+.on-deep{background-color:var(--deep);background-image:var(--texture);color:var(--on-dark-soft)}
+.on-navy h2,.on-deep h2,.on-navy h3,.on-deep h3{color:var(--on-dark)}
+.accent{color:var(--blue-ink)}
+.on-navy .accent,.on-deep .accent,.hero .accent{color:var(--blue)}
+.head{display:grid;gap:16px;justify-items:start;max-width:640px}
+.lede{font-size:clamp(17px,4.6vw,19px);color:var(--soft);max-width:40ch}
+.on-navy .lede,.on-deep .lede{color:var(--on-dark-soft)}
+
+/* Eyebrow: a few key headings only. A label, not a button. */
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font:500 14px/1.2 var(--text);letter-spacing:.02em;color:var(--ink);background:rgba(6,24,47,.06);padding:9px 14px;border-radius:var(--pill)}
+.eyebrow::before{content:"";width:7px;height:7px;flex:none;border-radius:50%;background:var(--blue)}
+.hero .eyebrow,.on-navy .eyebrow,.on-deep .eyebrow{color:var(--on-dark);background:rgba(255,255,255,.12)}
+
+/* ---------- Buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:var(--pill);font:400 18px/1 var(--display);text-decoration:none;cursor:pointer;border:2px solid transparent;transition:background-color .2s,color .2s,border-color .2s,transform .12s}
+.btn:active{transform:scale(.98)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-primary{background:var(--blue);color:var(--ink);border-color:var(--blue)}
+.btn-ghost{background:transparent;color:var(--on-dark);border-color:rgba(244,247,251,.7)}
+
+/* ---------- Header ---------- */
+.top{background:var(--paper);color:var(--ink)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px;padding-top:max(8px,env(safe-area-inset-top))}
+.brand{display:flex;flex-direction:column;justify-content:center;min-height:44px;text-decoration:none;line-height:1}
+.brand b{font:400 22px/1 var(--display);letter-spacing:.01em}
+.brand span{font:600 11px/1 var(--text);letter-spacing:.08em;white-space:nowrap;text-transform:uppercase;color:var(--soft);margin-top:5px}
+.tel{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 2px;font:400 17px/1 var(--display);text-decoration:none;white-space:nowrap}
+.tel svg{width:18px;height:18px;flex:none;color:var(--blue-ink)}
+
+/* ---------- Hero ---------- */
+.hero{padding:0;position:relative;background-color:var(--navy);background-image:var(--texture);color:var(--on-dark);overflow:hidden}
+.hero-copy{position:relative;z-index:1;display:grid;gap:20px;justify-items:start;padding-top:56px;padding-bottom:68px}
+.hero h1{color:#fff;font-size:clamp(44px,12.6vw,84px);line-height:1.02;max-width:11ch}
+/* H1 bounce-in (after lpmr.co.uk): each letter slides in from 50px right with a slight overshoot, 20ms apart */
+.hero h1 .w{display:inline-block;white-space:nowrap}
+.hero h1 .c{display:inline-block;opacity:0;transform:translateX(50px);animation:letter-in 1s cubic-bezier(.34,1.56,.64,1) forwards;animation-delay:calc(var(--i) * 20ms)}
+@keyframes letter-in{to{opacity:1;transform:none}}
+.promise{font-size:clamp(17px,4.7vw,20px);line-height:1.5;text-wrap:pretty;color:var(--on-dark-soft);max-width:32ch}
+.promise b{color:var(--on-dark);font-weight:600}
+.actions{display:grid;gap:12px;width:100%;margin-top:4px}
+
+/* ---------- What a clean vent does ---------- */
+.claims{list-style:none;margin:28px 0 0;padding:0;display:grid}
+.claims li{display:flex;align-items:center;gap:16px;padding:15px 0;font:400 clamp(20px,5.4vw,24px)/1.15 var(--display);color:var(--ink)}
+.claims li+li{border-top:1px solid var(--line)}
+.claims svg{width:40px;height:40px;flex:none;color:var(--blue-ink)}
+
+/* ---------- Price ---------- */
+.price{margin-top:32px;max-width:460px;background:rgba(255,255,255,.08);border-radius:var(--r-card);padding:10px}
+.price-top{background:var(--card);border-radius:18px;padding:24px 22px 22px;color:var(--body)}
+.price-top h3{font-size:20px;color:var(--ink)}
+.amount{display:flex;align-items:baseline;gap:10px;margin-top:10px;color:var(--ink)}
+.amount b{font:400 clamp(64px,19vw,88px)/.9 var(--display);letter-spacing:-.02em}
+.amount span{font:400 20px/1 var(--display)}
+.first{margin-top:18px;padding-top:16px;border-top:1px solid var(--line);font-size:17px;line-height:1.5}
+.first b{font:400 22px/1 var(--display);color:var(--ink)}
+.first em{font-style:normal;font-weight:600;color:var(--blue-ink)}
+.price .btn{width:100%;margin-top:10px}
+
+/* ---------- About + area ---------- */
+.about{display:grid;gap:28px}
+.about>*{min-width:0}
+.logo-card{border-radius:var(--r-card);overflow:hidden;background:#020e1d;max-width:520px}
+.logo-card img{width:100%;height:auto}
+.own{margin-top:20px;font-size:clamp(17px,4.6vw,19px);color:var(--body);max-width:44ch}
+.words{margin-top:18px;font:400 clamp(18px,5vw,21px)/1.4 var(--display);color:var(--ink)}
+.words span{white-space:nowrap}
+.words i{font-style:normal;color:var(--blue-ink)}
+.towns-h{margin-top:8px;font-size:clamp(24px,6vw,30px)}
+.towns{margin-top:12px;font-size:clamp(17px,4.6vw,19px);color:var(--body);max-width:52ch}
+.towns+.towns{margin-top:10px;color:var(--soft)}
+
+/* ---------- How it works ---------- */
+.steps{list-style:none;margin:36px 0 0;padding:0;display:grid;gap:24px;counter-reset:s}
+.steps li{display:grid;grid-template-columns:48px 1fr;gap:16px;align-items:start;counter-increment:s}
+.steps li::before{content:counter(s);width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--blue);color:var(--ink);font:400 20px/1 var(--display)}
+.steps b{display:block;font:400 21px/1.2 var(--display);color:var(--on-dark);margin-top:4px}
+.steps span{display:block;margin-top:4px}
+
+/* ---------- Form ---------- */
+.ask .wrap{display:grid;gap:28px}
+form{background:var(--card);border-radius:var(--r-card);padding:clamp(20px,5vw,32px);display:grid;gap:20px;max-width:600px}
+.field{display:grid;gap:8px;min-width:0}
+.field label,.field legend{font:400 17px/1.2 var(--display);color:var(--ink);padding:0}
+.field small{font:400 14px/1 var(--text);color:var(--soft);margin-left:4px}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+input[type=text],textarea{width:100%;font:16px/1.4 var(--text);color:var(--ink);background:var(--field);border:2px solid transparent;border-radius:var(--r-field);padding:13px 14px;min-height:52px;caret-color:var(--navy);transition:border-color .15s}
+textarea{min-height:110px;resize:vertical}
+input::placeholder,textarea::placeholder{color:var(--soft)}
+input[type=text]:focus,textarea:focus{outline:none;border-color:var(--focus)}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips input{position:absolute;width:1px;height:1px;opacity:0;margin:0}
+.chips label{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:var(--pill);background:var(--field);border:2px solid transparent;font:16px/1 var(--text);color:var(--ink);cursor:pointer;margin:0;transition:border-color .15s,background-color .15s,color .15s}
+.chips input:focus-visible+label{outline:3px solid var(--focus);outline-offset:3px}
+.chips input:checked+label{background:var(--ink);color:#fff}
+.err{display:none;font-size:15px;color:var(--error)}
+.field.bad .err{display:block}
+.field.bad input[type=text],.field.bad input[type=text]:focus,.field.bad input[type=text]:hover{border-color:var(--error)}
+form .btn-primary{width:100%}
+form .btn-primary:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.after{font-size:15px;color:var(--soft)}
+.sent{color:var(--ink);font-weight:600}
+.sent a{white-space:nowrap;display:inline-block;padding:11px 0;margin:-11px 0}
+@media (max-width:380px){.chips label{padding:0 14px}}
+
+/* ---------- Close ---------- */
+.close .who{margin-top:14px;font-size:clamp(18px,5vw,20px);color:var(--on-dark-soft)}
+.bigtel{display:inline-flex;align-items:center;gap:12px;margin-top:28px;font:400 clamp(30px,9vw,52px)/1 var(--display);text-decoration:none;color:var(--on-dark);min-height:56px;white-space:nowrap}
+.bigtel svg{width:.8em;height:.8em;flex:none;color:var(--blue)}
+
+/* ---------- Footer ---------- */
+footer{background-color:var(--deep);background-image:var(--texture);color:var(--on-dark-soft);padding:48px 0 calc(96px + env(safe-area-inset-bottom));font-size:16px}
+footer .wrap{display:grid;gap:14px}
+.nw{white-space:nowrap}
+footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-dark);text-decoration:none}
+
+/* ---------- Floating text circle (one circle, never a bottom bar) ---------- */
+.float{position:fixed;z-index:15;right:calc(16px + env(safe-area-inset-right));bottom:calc(16px + env(safe-area-inset-bottom));width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:var(--blue);color:var(--ink);box-shadow:0 10px 28px rgba(3,14,30,.35);transform:translateY(120px);transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.float.on{transform:none}
+.float svg{width:26px;height:26px}
+.float:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:50%}
+
+/* ---------- Motion: one fade-up, only for things below the first screen ---------- */
+.js .rise{transition:opacity .4s ease-out,transform .4s ease-out}
+.js .rise.below{opacity:0;transform:translateY(12px)}
+
+/* ---------- Desktop ---------- */
+@media (min-width:760px){
+  :root{--gutter:40px}
+  .top .wrap{min-height:76px}
+  .brand b{font-size:25px}
+  .tel{font-size:20px}
+  section{padding:96px 0}
+  .hero-copy{padding-top:96px;padding-bottom:112px}
+  .promise{max-width:none}
+  .actions{grid-auto-flow:column;justify-content:start;width:auto}
+  .actions .btn{min-width:230px}
+}
+@media (min-width:1024px){
+  .split{display:grid;grid-template-columns:1fr 1fr;column-gap:64px;align-items:start}
+  .split .claims{margin-top:0}
+  .prices .wrap{display:grid;grid-template-columns:1fr 460px;gap:64px;align-items:center}
+  .price{margin-top:0}
+  .about{grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+  .ask .wrap{grid-template-columns:1fr 1.2fr;gap:64px;align-items:start}
+  .ask .head{position:sticky;top:40px}
+  .close .wrap{display:grid;grid-template-columns:1fr auto;gap:48px;align-items:end}
+  .bigtel{margin-top:0}
+  .how .steps{grid-template-columns:repeat(3,1fr);gap:40px}
+  .steps b{font-size:22px}
+}
+.hero-logo{display:none}
+@media (min-width:1024px){
+  .hero-copy{grid-template-columns:minmax(0,1fr) minmax(0,440px);column-gap:56px}
+  .hero-copy>*{grid-column:1}
+  .hero-copy>.hero-logo{display:block;grid-column:2;grid-row:1/span 4;align-self:center;box-shadow:0 24px 60px rgba(2,10,22,.45)}
+  .about-logo{display:none}
+  .towns-h{margin-top:0}
+}
+/* hover styles only where there is a real pointer, so taps don't leave them stuck on */
+@media (hover:hover){
+.tel:hover{color:var(--blue-ink)}
+.btn-primary:hover{background:var(--blue-2);border-color:var(--blue-2)}
+.btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.1)}
+input[type=text]:hover,textarea:hover{border-color:var(--focus)}
+.chips label:hover{border-color:var(--focus)}
+form .btn-primary:hover{outline:2px solid var(--focus);outline-offset:2px}
+.sent a:hover{color:var(--navy)}
+.bigtel:hover{color:var(--blue)}
+footer a:hover{color:var(--blue)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .rise,.float,.btn{transition:none}
+  .js .rise.below{opacity:1;transform:none}
+  .hero h1 .c{animation:none;opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<!--
+THESIS: An owner-run dryer vent cleaning site that sells one thing, fire safety, in the owners' own words ("Clean dryer, no fire."), and makes booking a text away.
+OWN-WORLD: Calm band style (after lpmr.co.uk). Off-white paper, Pristine navy (#0d3768) and deep navy (#06182f, faint diagonal lines) bands, the logo's vent blue (#15a0f5) as the one accent (fills only; #0a5fa8 when it has to be text on light). Cal Sans display, system body at 16/1.7.
+STORY: The visitor sees "Clean dryer, no fire. Ocean County, NJ.", learns what a clean vent does, sees one plain price ($139, $129 the first time), meets Daniel & Brandi, and texts them to book.
+FIRST VIEWPORT: Paper header with wordmark left and tap-to-call number top right. Navy textured hero: eyebrow, the H1 with the place in accent blue, one promise naming the owners, two pill buttons (Book a cleaning, Text us).
+FORM: no photos (the only image is an illustrated flyer, not job photos), so the hero is the plain textured navy band; the logo is shown once, framed, beside the owners' introduction.
+-->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h3.5l1.8 4.6-2.3 1.5a11 11 0 0 0 6 6l1.5-2.3L20 14.5V18a2 2 0 0 1-2.2 2A16 16 0 0 1 3 5.2 2 2 0 0 1 5 3z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#" aria-label="Pristine Dryer Vents LLC, back to top"><b>Pristine</b><span>Dryer Vents LLC</span></a>
+    <a class="tel" href="tel:+17327991379"><svg aria-hidden="true"><use href="#i-phone"/></svg>732-799-1379</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" id="hero" aria-labelledby="h1">
+  <div class="wrap hero-copy">
+    <p class="eyebrow">Dryer vent cleaning</p>
+    <h1 id="h1">Clean dryer, no&nbsp;fire. <span class="accent">Ocean County, NJ.</span></h1>
+    <p class="promise">We're <b>Daniel &amp; Brandi,</b> and we look after your home like it's our own.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#book">Book a cleaning</a>
+      <a class="btn btn-ghost" data-sms href="sms:+17327991379?&amp;body=Hi%20Daniel%20%26%20Brandi%2C%20I%20found%20your%20website.%20I'd%20like%20to%20book%20a%20dryer%20vent%20cleaning.%20My%20town%3A%20"><svg aria-hidden="true"><use href="#i-chat"/></svg>Text us</a>
+    </div>
+    <div class="logo-card hero-logo" aria-hidden="true"><img src="logo.webp" width="820" height="400" alt=""></div>
+  </div>
+</section>
+
+<section class="on-paper" aria-labelledby="h-why">
+  <div class="wrap split">
+    <div class="rise">
+      <h2 id="h-why">Safer homes. Lower drying times. Peace of mind.</h2>
+      <p class="lede" style="margin-top:16px">Lint packs into the vent behind every dryer. We clear it out so your dryer can breathe, and so can you.</p>
+    </div>
+    <ul class="claims">
+      <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 36c-6.6 0-11-4.4-11-10.4 0-6.4 5.2-9.6 6.4-16.6 3.4 2 5 5.2 5.2 8.4 1.4-1.4 2.2-3.4 2.2-5.4 4.4 3.4 8.2 8.4 8.2 13.6C31 31.6 26.6 36 20 36z"/><path d="M20 36c-2.8 0-4.6-1.9-4.6-4.4 0-2.9 2.4-4.4 3.2-7.6 2.6 1.6 6 4.4 6 7.6 0 2.5-1.8 4.4-4.6 4.4z"/></svg>Prevents fire hazards</li>
+      <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="20" cy="22" r="14"/><path d="M20 14v8l5 4M15 4h10"/></svg>Improves drying time</li>
+      <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 4L8 23h11l-2 13 15-20H21z"/></svg>Lowers energy bills</li>
+      <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 4l13 5v9c0 8.5-5.6 15.3-13 18-7.4-2.7-13-9.5-13-18V9z"/><path d="M14 20l4.5 4.5L27 16"/></svg>Extends dryer lifespan</li>
+      <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 14h19a5 5 0 1 0-5-5M5 22h27a5 5 0 1 1-5 5M5 30h12"/></svg>Healthier indoor air</li>
+      <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19L20 6l15 13"/><path d="M9 16v19h22V16"/><path d="M17 35V25h6v10"/></svg>Cleaner, safer home</li>
+    </ul>
+  </div>
+</section>
+
+<section class="on-navy prices" id="price" aria-labelledby="h-price">
+  <div class="wrap">
+    <div class="head rise">
+      <p class="eyebrow">One clear price</p>
+      <h2 id="h-price">Priced per dryer. <span class="accent">No surprises.</span></h2>
+      <p class="lede">You'll know what it costs before we arrive.</p>
+    </div>
+    <div class="price rise">
+      <div class="price-top">
+        <h3>Dryer vent cleaning</h3>
+        <p class="amount"><b>$139</b><span>per dryer</span></p>
+        <p class="first"><b>$129</b> your first time with us. <em>You save $10.</em></p>
+      </div>
+      <a class="btn btn-primary" href="#book" data-first>Book a cleaning</a>
+    </div>
+  </div>
+</section>
+
+<section class="on-paper" aria-labelledby="h-about">
+  <div class="wrap about">
+    <div class="rise">
+      <h2 id="h-about">Hey neighbors, we're <span class="accent">Daniel &amp; Brandi.</span></h2>
+      <p class="own">Pristine Dryer Vents is ours. When you book, you're dealing with the owners, and we treat your home the way we'd want someone to treat ours.</p>
+      <p class="words"><span>Locally owned &amp; insured</span> <i aria-hidden="true">·</i> <span>Friendly, reliable service</span></p>
+    </div>
+    <div class="rise">
+      <h3 class="towns-h" id="area">Where we work</h3>
+      <p class="towns">Manchester, Whiting, Lakehurst, Bayville, Beachwood, Toms River, Brick, Point Pleasant, Freehold, Ramtown and the communities around them.</p>
+      <p class="towns">We service everywhere in New Jersey except North Jersey. Not sure about your town? Text us and ask.</p>
+    </div>
+    <div class="logo-card rise about-logo"><img src="logo.webp" width="820" height="400" alt="Pristine Dryer Vents LLC logo" loading="lazy" decoding="async"></div>
+  </div>
+</section>
+
+<section class="on-deep how" aria-labelledby="h-how">
+  <div class="wrap">
+    <h2 id="h-how" class="rise">How it <span class="accent">works.</span></h2>
+    <ol class="steps">
+      <li class="rise"><div><b>Text or call us.</b><span>Tell us your town and how many dryers.</span></div></li>
+      <li class="rise"><div><b>We pick a time together.</b><span>One that works around your day.</span></div></li>
+      <li class="rise"><div><b>We clean your vent.</b><span>And your dryer is ready to run safely.</span></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="on-paper ask" id="book" aria-labelledby="h-ask">
+  <div class="wrap">
+    <div class="head rise">
+      <p class="eyebrow">$129 your first time</p>
+      <h2 id="h-ask">Book a cleaning</h2>
+      <p class="lede">Fill this in and it becomes a text to us. We'll text you back to pick a time.</p>
+    </div>
+    <form id="bookForm" class="rise" novalidate>
+      <div class="field" id="f-name">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" autocomplete="name" maxlength="60" placeholder="First name is fine" aria-describedby="e-name">
+        <p class="err" id="e-name">Add your name so we know who's texting.</p>
+      </div>
+      <div class="field" id="f-town">
+        <label for="town">Your town</label>
+        <input type="text" id="town" name="town" autocomplete="address-level2" maxlength="60" placeholder="e.g. Manchester" aria-describedby="e-town">
+        <p class="err" id="e-town">Add your town so we know you're in our area.</p>
+      </div>
+      <fieldset class="field">
+        <legend>How many dryers?</legend>
+        <div class="chips">
+          <input type="radio" name="dryers" id="d1" value="1" checked><label for="d1">1 dryer</label>
+          <input type="radio" name="dryers" id="d2" value="2"><label for="d2">2 dryers</label>
+          <input type="radio" name="dryers" id="d3" value="3 or more"><label for="d3">3 or more</label>
+        </div>
+      </fieldset>
+      <fieldset class="field">
+        <legend>First time with us?</legend>
+        <div class="chips">
+          <input type="radio" name="first" id="ft1" value="yes"><label for="ft1">Yes, first time</label>
+          <input type="radio" name="first" id="ft2" value="no"><label for="ft2">I've booked before</label>
+        </div>
+      </fieldset>
+      <fieldset class="field">
+        <legend>When works for you? <small>(optional)</small></legend>
+        <div class="chips">
+          <input type="radio" name="when" id="w1" value="This week"><label for="w1">This week</label>
+          <input type="radio" name="when" id="w2" value="Next week"><label for="w2">Next week</label>
+          <input type="radio" name="when" id="w3" value="Whenever works"><label for="w3">I'm flexible</label>
+        </div>
+      </fieldset>
+      <div class="field">
+        <label for="notes">Anything we should know? <small>(optional)</small></label>
+        <textarea id="notes" name="notes" maxlength="500" placeholder="Dryer's taking forever, vent goes through the roof, best times to reach you…"></textarea>
+      </div>
+      <button class="btn btn-primary" type="submit"><svg aria-hidden="true"><use href="#i-chat"/></svg>Text this to us</button>
+      <p class="sent" id="sent" role="status" hidden>Didn't open your messages? Call or text us at <a href="tel:+17327991379">732-799-1379</a>.</p>
+      <p class="after">Opens your messages with this written out. Nothing is sent until you press send.</p>
+    </form>
+  </div>
+</section>
+
+<section class="on-navy close" id="close" aria-labelledby="h-close">
+  <div class="wrap">
+    <div class="rise">
+      <h2 id="h-close">Pristine Dryer Vents LLC</h2>
+      <p class="who">Clean dryer, no fire. Daniel &amp; Brandi, Ocean County, NJ.</p>
+    </div>
+    <a class="bigtel rise" href="tel:+17327991379"><svg aria-hidden="true"><use href="#i-phone"/></svg>732-799-1379</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Pristine Dryer Vents LLC · Daniel &amp; Brandi · Ocean County, NJ · <a class="nw" href="tel:+17327991379">732-799-1379</a></span>
+  </div>
+</footer>
+
+<a class="float" id="float" data-sms href="sms:+17327991379?&amp;body=Hi%20Daniel%20%26%20Brandi%2C%20I%20found%20your%20website.%20I'd%20like%20to%20book%20a%20dryer%20vent%20cleaning.%20My%20town%3A%20" aria-label="Text Daniel and Brandi"><svg aria-hidden="true"><use href="#i-chat"/></svg></a>
+
+<script>
+/* ===== Config ===== */
+var CONFIG = {
+  FLOAT: true,   // the floating text circle; false removes it
+  MOTION: true,  // hero H1 bounce-in and the fade-up; false for an older-audience (40+) build
+  PHONE: '+17327991379'
+};
+document.documentElement.classList.add('js');
+var calm=!CONFIG.MOTION||matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ===== Hero H1 bounce-in: split into letters (JS only, so no-JS and reduced motion keep the plain heading) ===== */
+(function(){
+  var h=document.getElementById('h1');
+  if(!h||calm)return;
+  var plain=h.innerHTML,i=0,last=null;
+  h.setAttribute('aria-label',h.textContent.replace(/\s+/g,' ').trim());
+  function split(node,into){
+    [].slice.call(node.childNodes).forEach(function(n){
+      if(n.nodeType===3){
+        // split on normal spaces only, so the no-break space in "no fire" keeps those words together
+        n.textContent.split(/( +)/).forEach(function(part){
+          if(!part)return;
+          if(/^ +$/.test(part)){into.appendChild(document.createTextNode(' '));return}
+          var w=document.createElement('span');w.className='w';w.setAttribute('aria-hidden','true');
+          for(var k=0;k<part.length;k++){var c=document.createElement('span');c.className='c';c.style.setProperty('--i',i++);c.textContent=part[k];w.appendChild(c);last=c}
+          into.appendChild(w);
+        });
+      }else if(n.nodeType===1){var copy=n.cloneNode(false);split(n,copy);into.appendChild(copy)}
+    });
+  }
+  var frag=document.createDocumentFragment();split(h,frag);h.textContent='';h.appendChild(frag);
+  // once the last letter lands, put the plain heading back so kerning and text selection return
+  if(last)last.addEventListener('animationend',function(){h.innerHTML=plain;h.removeAttribute('aria-label')});
+})();
+
+/* ===== Booking form: composes a text to Daniel & Brandi ===== */
+(function(){
+  var form=document.getElementById('bookForm');if(!form)return;
+  function val(id){return document.getElementById(id).value.trim()}
+  function pick(n){var r=form.querySelector('input[name='+n+']:checked');return r?r.value:''}
+  function mark(id,bad){var f=document.getElementById(id);f.classList.toggle('bad',bad);f.querySelector('input').setAttribute('aria-invalid',bad?'true':'false')}
+  // the price card's button means a first-time booking
+  [].forEach.call(document.querySelectorAll('[data-first]'),function(a){a.addEventListener('click',function(){document.getElementById('ft1').checked=true})});
+  form.addEventListener('input',function(e){var f=e.target.closest('.field');if(f&&f.classList.contains('bad')&&e.target.value.trim())f.classList.remove('bad')});
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var name=val('name'),town=val('town'),notes=val('notes'),dryers=pick('dryers'),first=pick('first'),when=pick('when');
+    mark('f-name',!name);mark('f-town',!town);
+    if(!name){document.getElementById('name').focus();return}
+    if(!town){document.getElementById('town').focus();return}
+    var msg='Hi Daniel & Brandi, this is '+name+' in '+town+'. I\'d like to book a dryer vent cleaning for '+(dryers==='1'?'1 dryer':dryers+' dryers')+'.';
+    if(first==='yes')msg+=' It\'s my first time with you.';
+    if(when)msg+=' When: '+when+'.';
+    if(notes)msg+=' '+notes;
+    location.href='sms:'+CONFIG.PHONE+'?&body='+encodeURIComponent(msg);
+    // if no messages app opened (desktop, some in-app browsers), say what to do instead
+    setTimeout(function(){document.getElementById('sent').hidden=false},900);
+  });
+})();
+
+/* ===== Floating text circle: shows after the hero, hides while the form is on screen ===== */
+(function(){
+  var fl=document.getElementById('float');if(!fl)return;
+  if(!CONFIG.FLOAT||!('IntersectionObserver' in window)){fl.remove();return}
+  var pastHero=false,formIn=false;
+  function sync(){var on=pastHero&&!formIn;fl.classList.toggle('on',on);fl.tabIndex=on?0:-1;fl.setAttribute('aria-hidden',on?'false':'true')}
+  new IntersectionObserver(function(es){pastHero=!es[0].isIntersecting;sync()},{threshold:.15}).observe(document.getElementById('hero'));
+  new IntersectionObserver(function(es){formIn=es[0].isIntersecting;sync()},{rootMargin:'-15% 0px -15% 0px'}).observe(document.getElementById('bookForm'));
+  sync();
+})();
+
+/* ===== Fade-up: everything is visible at rest; only what starts below the first screen rises 12px in ===== */
+(function(){
+  if(calm||!('IntersectionObserver' in window))return;
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('below');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+  [].forEach.call(document.querySelectorAll('.rise'),function(el){if(el.getBoundingClientRect().top>innerHeight){el.classList.add('below');io.observe(el)}});
+})();
+</script>
+</body>
+</html>
